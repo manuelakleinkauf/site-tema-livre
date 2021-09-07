@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"/>
+    <title>Doce de Mãe</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Contato</a></li>
+                <li><a href="">Orçamentos</a></li>
+                <li id="festas"><a href="">Festas</a></li>
+            </ul>
+        </nav>
+        <div id="logo"><img src="imagens/logo1.png"/></div>
+        <div id="menu"><img src="imagens/menu.png"/></div>
+    </header>
+    <main>
+            <h1>Para Presentear</h1>
+            <section id="presentear">
+                <div>
+                    <img src="imagens/morango.jpg"/>
+                    <h2>Bombom de morango</h2>
+                    <h3>R$30,00</h3>
+                </div>
+                <div id="barca">
+                    <img src="imagens/barca.jpg"/>
+                    <h2>Barca de brigadeiro</h2>
+                    <h3>R$25,00</h3>
+                </div>
+                <div id="caixa">
+                    <img src="imagens/caixa.jpg"/>
+                    <h2>Caixa de doces</h2>
+                    <h3>R$55,00</h3>
+                </div>
+            </section>
+            <h1>Para Festas</h1>
+            <section id="kit">
+                <div>
+                    <img src="imagens/bolo.jpg"/>
+                    <h2>Kit festa</h2>
+                    <h3>R$220,00</h3>
+                </div>
+                <div id="doces">
+                    <img src="imagens/doces.jpg"/>
+                    <h2>Doces sortidos</h2>
+                    <h3>R$65,00</h3>
+                </div>
+                <div id="cake">
+                    <img src="imagens/naked.jpg"/>
+                    <h2>Naked cake</h2>
+                    <h3>R$75,00</h3>
+                </div>
+            </section>
+    </main>
+    <footer></footer>
+    <script>
+        console.log("");
+        document.querySelector("nav").style.display="none";
+        icon=document.querySelector("#menu");
+        icon.onclick= function(){
+            nav=document.querySelector("nav");
+        if(nav.style.display=="none")
+            nav.style.display="block";
+        else 
+            nav.style.display="none";
+        }
+    </script>
